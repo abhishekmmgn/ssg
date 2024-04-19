@@ -33,10 +33,10 @@ def run(
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="HTTP Server with CORS")
     parser.add_argument(
-        "--dir", type=str, help="Directory to serve files from", default="public"
+        "--dir", type=str, help="Directory to serve files from", default="dist"
     )
     parser.add_argument("--port", type=int,
-                        help="Port to serve HTTP on", default=8888)
+                        help="Port to serve HTTP on", default=1234)
     args = parser.parse_args()
 
     run(port=args.port, directory=args.dir)
